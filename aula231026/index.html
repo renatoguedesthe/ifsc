@@ -10,30 +10,35 @@
 <style>
     table {
         border-collapse: collapse;
-        width: 50%;
-        margin-top: 20px;
+        width: 100%;
+        
     }
 
-    th, td {
-        border: 1px solid #ddd;
+    th, td { 
+        border: 3px solid #ddd;
         padding: 8px;
         text-align: left;
+        color: red;
+        
     }
 
     th {
         background-color: #f2f2f2;
+        color: blue;
     }
 </style>
+
+<body style="background-image: url('img/ifsc.png'); background-size: 50%; background-position: center; background-repeat: no-repeat;">
 
 
 </head>
 
 
 
-<body style="background-color: #e9f1ff; color: #1f1f1f;">
+<body >
     
     <form action="historico.html" method="post">
-        <label for="nome" >Nome:</label>
+        <label for="nome" style="color: blue;">Nome:</label>
         <input type="text" id="nome" name="nome" required >
         <label for="sobrenome" style="color: blue;">Sobrenome:</label>
         <input type="text" id="sobrenome" name="sobrenome" required>
@@ -46,13 +51,13 @@
         <label for="nascimento" style="color: blue;">Data de Nascimento:</label>
         <input type="date" id="nascimento" name="nascimento" required>
         <label for="curso" style="color: blue;">Cursos:</label>
-        <select id="curso" name="curso" required>
-            <option value="">Selecione</option>
-            <option value="informatica">Informática</option>
-            <option value="pedagogia">Pedagogia</option>
-            <option value="quimica">Química</option>
-            <option value="mecanica">Mecânica</option>
-            <option value="eletrica">Elétrica</option>
+        <select id="curso" name="curso" style="color: red;" required>
+            <option value="" style="color: red  ;">Selecione</option>
+            <option value="informatica" style="color: red;">Informática</option>
+            <option value="pedagogia" style="color: red;">Pedagogia</option>
+            <option value="quimica" style="color: red;">Química</option>
+            <option value="mecanica" style="color: red;">Mecânica</option>
+            <option value="eletrica" style="color: red;">Elétrica</option>
         </select>
         <input type="submit" value="Enviar" style="background-color: blue; color: white; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">
 
@@ -60,7 +65,7 @@
     </form>
 
     <table>
-        <caption>Informações dos Atendimentos</caption>
+        <caption >Informações dos Atendimentos</caption>
         <thead>
             <tr>
                 <th scope="col">Dia</th>
