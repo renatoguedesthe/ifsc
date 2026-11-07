@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>CONFIGURAÇÕES</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+   <style>
+      button { background-color: #cbd5e1; padding: 10px 16px; margin-top: 50px; 
+        font-family: Arial, sans-serif; font-size: 16px; border: none; border-radius: 4px; cursor: pointer; }
+      
+      .btn-classe { background-color: blue;   }
+
+      #btn-id { background-color: green; padding: 10px 16px; margin-top: 100px;}
+
+      div p {
+          color: red;
+      }
+
+      h2 + p {
+          color: blue;
+      }
+
+      h2 ~ p {
+          color: green;
+      }
+
+      ul > li { color: rgb(144, 160, 26);}
+
+   </style>
+
+
+
+<body>
+
+    <div> 
+
+        <h2> Configurações de Botões </h2>
+        <p> Este é um exemplo de configuração de botões com diferentes estilos.  </p2>
+        <p> Segue abaixo os botões com diferentes estilos aplicados: </p>
+        <section>
+            <p> Este botão utiliza o estilo padrão definido na tag button. </p>
+        </section>
+        <p> agora está depois da section</p>
+        <ul>
+            <li> Este botão utiliza o estilo definido na classe .btn-classe. </li>
+            <li> Este botão utiliza o estilo definido no ID #btn-id. </li>
+            <li> Este botão utiliza o estilo definido diretamente no atributo style. </li>
+        </ul>
+    </div>
+
+
+     
+    <button > Botão Padrão </button>
+
+    <button id="btn-id">Botão Id</button>
+
+    <button class="btn-classe">Botão Classe</button>
+
+    <button style="background-color: brown;">Botão Estilo</button>
+
+
+</body>
+</html>
