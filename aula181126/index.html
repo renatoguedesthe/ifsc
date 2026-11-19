@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<style>
+    .menu {
+        display: grid;
+        gap: 1rem;
+
+    }
+
+    .ajuda {
+        color: black;
+        background-color: rgb(227, 172, 172);
+        margin-top: 5px;
+        font-size: 2rem;
+    }
+
+    @media (min-width : 768px) {
+        .menu {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .ajuda {
+            background-color: aqua;
+        }
+    }
+
+    
+    h1 {
+        font-size: clamp(2rem, 5vw, 4rem);
+    }
+</style>
+
+<body>
+
+    <section class="menu">
+        <section class="ajuda"> AULA </section>
+        <section class="ajuda"> AULA2</section>
+        <section class="ajuda"> AULA3</section>
+        <section class="ajuda"> AULA4</section>
+
+        <h1> AGORA VAI </h1>
+    </section>
+
+</body>
+
+</html>
