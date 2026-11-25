@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos - Parque IFSC</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #198754, #20c997);
+            min-height: 100vh;
+        }
+
+        .card-form {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 col-lg-6">
+
+                <div class="card card-form">
+
+                    <div class="card-header bg-success text-white text-center">
+                        <h2 class="mb-0">🎡 Compra de Ingressos</h2>
+                    </div>
+
+                    <div class="card-body p-4">
+
+                        <form action="pagamento.html" method="post">
+
+                            <!-- Nome -->
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">
+                                    Nome do Cliente
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       id="nome"
+                                       name="nome"
+                                       placeholder="Digite seu nome"
+                                       required>
+                            </div>
+
+                            <!-- Telefone -->
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">
+                                    Telefone do Cliente
+                                </label>
+
+                                <input type="tel"
+                                       class="form-control"
+                                       id="telefone"
+                                       name="telefone"
+                                       placeholder="(48) 99999-9999"
+                                       required>
+                            </div>
+
+                            <!-- Data -->
+                            <div class="mb-4">
+                                <label for="data" class="form-label">
+                                    Data de Uso do Ingresso
+                                </label>
+
+                                <input type="date"
+                                       class="form-control"
+                                       id="data"
+                                       name="data"
+                                       required>
+                            </div>
+
+                            <!-- Botões -->
+                            <div class="d-grid gap-2">
+
+                                <button type="submit"
+                                        class="btn btn-warning btn-lg">
+                                    💳 Pagar
+                                </button>
+
+                                <a href="index.html"
+                                   class="btn btn-outline-secondary">
+                                    Voltar
+                                </a>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
